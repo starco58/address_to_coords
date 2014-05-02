@@ -7,7 +7,7 @@ class AddressesController < ApplicationController
     @url_safe_address = URI.encode(@address)
 
     # Your code goes here.
-    # url = ?
+    url = http:////maps.googleapis.com/maps/api/geocode/json?address={@address}&sensor=false
     # raw_data = ?
     # parsed_data = ?
     # @latitude = ?
