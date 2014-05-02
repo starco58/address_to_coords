@@ -8,8 +8,8 @@ class AddressesController < ApplicationController
 
     # Your code goes here.
     url = "http://maps.googleapis.com/maps/api/geocode/json?address=the+corner+of+Foster+and+Sheridan&sensor=false"
-    # raw_data = ?
-    # parsed_data = ?
+    raw_data = open(url).read
+    parsed_data = JSON.parse(raw_data)
     # @latitude = ?
     # @longitude = ?
   end
